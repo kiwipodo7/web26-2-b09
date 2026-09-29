@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>14image_basic</title>
+</head>
+<body>
+    <img src="Penguins.jpg" alt="펭귄" width="300">
+    <img src="Nothing" alt="이미지 없음" width="300">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3iDhhBDn0opuQ3xJOlgE7PZ-StD7Mn0fEfpInPOLi4cTfMjDF1z162C8&s=10" alt="화난 고양이" width="150" height="300">
+
+    <h2>음악 삽입하기</h2>
+    <audio src="Kalimba.mp3" controls="controls"></audio>
+
+    <h2>웹 브라우저 제약이 없도록 음악 삽입</h2>
+    <audio controls="controls">
+        <source src="kalimaba.mp3" type="audio/mp3">
+        <source src="kalimaba.ogg" type="audio/ogg">
+    </audio>
+
+    <h2>동영상 삽입</h2>
+    <video controls="controls" width="200">
+        <source src="Wildlife.mp4" type="video/mp4">
+        <source src="Wildlife.webm" type="video/webm">
+    </video>
+
+    <h2>18동영상 불러오는 동안 다른 이미지 보여주기</h2>
+    <video controls="controls" poster="horse.jpg" width="200">
+        <source src="Wildlife.mp4" type="video/mp4">
+        <source src="Wildlife.webm" type="video/webm">
+    </video>
+</body>
+</html>
