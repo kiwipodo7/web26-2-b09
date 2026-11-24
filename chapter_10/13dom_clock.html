@@ -7,7 +7,15 @@
     <title>DOM Basic</title>
     
 </head>
-
+<script>
+    window.onload = function(){
+        let clock = document.getElementById('clock');
+        setInterval(function(){
+            let now = new Date();
+            clock.innerHTML = now.toString();
+        },1000);
+    };
+</script>
 <body>
     <h1 id="clock"></h1>
 
